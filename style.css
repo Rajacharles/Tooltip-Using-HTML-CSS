@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #222;
+  font-family: "poppins", sans-serif;
+}
+
+.social-icons{
+  display: flex;
+}
+
+.social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icon:hover{
+  color: #fff;
+}
+
+.social-icon:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+
+.social-icon:active {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.tooltip{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 1rem 1.8rem;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  pointer-events: none;
+  text-transform: uppercase;
+  z-index: 1;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.tooltip:after{
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+/*codepen*/
+.social-icon--codepen {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-icon--codepen .tooltip {
+  background-color: #000;
+  color: currentColor;
+}
+
+.social-icon--codepen .tooltip:after {
+  border-top-color: #000;
+}
+
+/*twitter*/
+.social-icon--twitter {
+  background-color: #2b97f1;
+  color: #fff;
+}
+
+.social-icon--twitter .tooltip {
+  background-color: #2b97f1;
+  color: currentColor;
+}
+
+.social-icon--twitter .tooltip:after {
+  border-top-color: #2b97f1;
+}
+
+/*instagram*/
+.social-icon--instagram {
+  background-color: #f049d9;
+  color: #fff;
+}
+
+.social-icon--instagram .tooltip {
+  background-color: #f049d9;
+  color: currentColor;
+}
+
+.social-icon--instagram .tooltip:after {
+  border-top-color: #f049d9;
+}
+
+/*Whatsapp*/
+.social-icon--whatsapp {
+  background-color: #3BBF26;
+  color: #fff;
+}
+
+.social-icon--whatsapp .tooltip {
+  background-color: #3BBF26;
+  color: currentColor;
+}
+
+.social-icon--whatsapp .tooltip:after {
+  border-top-color: #3BBF26;
+}
+
